@@ -20,11 +20,12 @@ function App() {
 
     return (
         <div className="App">
+            <h1>To Do List</h1>
             <div className="todo-container">
-                <h1>To Do List</h1>
+                    <p1>Enter a task into the field below:</p1>
                 <div className="input-container">
-                    <input type="text" ref={todoInputRef} placeholder="Enter your todo" />
-                    <button onClick={handleAddTodo}>Add</button>
+                    <input type="text" ref={todoInputRef} placeholder="e.g. Study" />
+                    <button onClick={handleAddTodo}>Add Task</button>
                 </div>
                 <ul className="todo-list">
                     {todos.map((todo, index) => (
@@ -33,6 +34,7 @@ function App() {
                         </li>
                     ))}
                 </ul>
+                <p2><em>Click on items to remove from the list</em></p2>
             </div>
         </div>
     );

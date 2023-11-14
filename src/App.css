@@ -1,52 +1,79 @@
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f0f0f0; /* Use your desired background color or image */
+    background-color: #212121;
 }
 
-.todo-container {
-    background: #fff;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+    color: #fff;
+}
+
+.App {
     text-align: center;
 }
 
+p1 {
+    color: #d7d7d7;
+}
+
+ p2{
+     color: #808080;
+     font-size:13px;
+ }
+
+.todo-container {
+    background-color: #3e3e3e;
+    padding: 15px;
+    margin: 1% auto;
+    max-width: 850px; 
+    border-radius: 20px;
+}
+
 .input-container {
-    margin-bottom: 15px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 input {
+    border-radius: 8px;
     padding: 8px;
-    margin-right: 10px;
+    margin-right: 5px;
+    justify-content: center;
 }
 
 button {
     padding: 8px 15px;
-    background: #4caf50;
-    color: #fff;
+    background: #809674;
+    color: #000000;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
+    button:hover{
+        background: #78ae7b;
+        color: #fff;
+    }
 
 .todo-list {
-    
-    padding: 0;
+    padding: 10px;
 }
 
 li {
+    background-color: lightgray;
+    color: #212121;
     padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #212121;
+    border-radius: 8px;
+    margin-bottom: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s, color 0.2s;
 }
+    li:nth-child(even) {
+        background-color: #777a8b; 
+    }
 
     li:hover {
-        background-color: #4caf50;
+        background-color: #809674;
         color: #fff;
     }
